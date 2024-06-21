@@ -1,0 +1,91 @@
+2024-06-21 00:07:16,286 - INFO - Authenticating with Azure...
+2024-06-21 00:07:16,286 - INFO - No environment configuration found.
+2024-06-21 00:07:16,286 - INFO - ManagedIdentityCredential will use IMDS
+2024-06-21 00:07:16,288 - INFO - Deleting VM: pytesting-vm
+2024-06-21 00:07:16,289 - INFO - Request URL: 'http://169.254.169.254/metadata/identity/oauth2/token?api-version=REDACTED&resource=REDACTED'
+Request method: 'GET'
+Request headers:
+    'User-Agent': 'azsdk-python-identity/1.17.0 Python/3.12.4 (Windows-11-10.0.22631-SP0)'
+No body was attached to the request
+2024-06-21 00:07:16,802 - INFO - DefaultAzureCredential acquired a token from AzureCliCredential
+2024-06-21 00:07:16,803 - INFO - Request URL: 'https://management.azure.com/subscriptions/c65c2f3a-5807-4010-be26-9f1bd8ae3d9f/resourceGroups/python-testing/providers/Microsoft.Compute/virtualMachines/pytesting-vm?api-version=REDACTED'
+Request method: 'DELETE'
+Request headers:
+    'Accept': 'application/json'
+    'x-ms-client-request-id': '5d33249e-2f7b-11ef-afa7-546cebdab4c9'
+    'User-Agent': 'azsdk-python-azure-mgmt-compute/31.0.0 Python/3.12.4 (Windows-11-10.0.22631-SP0)'
+    'Authorization': 'REDACTED'
+No body was attached to the request
+2024-06-21 00:07:17,613 - INFO - Response status: 202
+Response headers:
+    'Cache-Control': 'no-cache'
+    'Pragma': 'no-cache'
+    'Expires': '-1'
+    'Location': 'REDACTED'
+    'Retry-After': '10'
+    'Azure-AsyncOperation': 'REDACTED'
+    'azure-asyncnotification': 'REDACTED'
+    'x-ms-ratelimit-remaining-resource': 'Microsoft.Compute/DeleteVMSubscriptionMaximum;1499,Microsoft.Compute/DeleteVMResource;11'
+    'Strict-Transport-Security': 'REDACTED'
+    'x-ms-request-id': '7cfe2454-76d7-4d27-a906-75c36a90b934'
+    'x-ms-ratelimit-remaining-subscription-deletes': 'REDACTED'
+    'x-ms-ratelimit-remaining-subscription-global-deletes': 'REDACTED'
+    'x-ms-correlation-request-id': 'REDACTED'
+    'x-ms-routing-request-id': 'REDACTED'
+    'X-Content-Type-Options': 'REDACTED'
+    'X-Cache': 'REDACTED'
+    'X-MSEdge-Ref': 'REDACTED'
+    'Date': 'Fri, 21 Jun 2024 03:07:16 GMT'
+    'Content-Length': '0'
+2024-06-21 00:07:17,614 - INFO - Request URL: 'https://management.azure.com/subscriptions/c65c2f3a-5807-4010-be26-9f1bd8ae3d9f/providers/Microsoft.Compute/locations/eastus/operations/7cfe2454-76d7-4d27-a906-75c36a90b934?p=REDACTED&api-version=REDACTED&t=REDACTED&c=REDACTED&s=REDACTED&h=REDACTED'
+Request method: 'GET'
+Request headers:
+    'x-ms-client-request-id': '5d33249e-2f7b-11ef-afa7-546cebdab4c9'
+    'User-Agent': 'azsdk-python-azure-mgmt-compute/31.0.0 Python/3.12.4 (Windows-11-10.0.22631-SP0)'
+    'Authorization': 'REDACTED'
+No body was attached to the request
+2024-06-21 00:07:17,847 - INFO - Response status: 200
+Response headers:
+    'Cache-Control': 'no-cache'
+    'Pragma': 'no-cache'
+    'Content-Length': '134'
+    'Content-Type': 'application/json; charset=utf-8'
+    'Expires': '-1'
+    'Retry-After': '30'
+    'x-ms-ratelimit-remaining-resource': 'Microsoft.Compute/GetOperationResource;44,Microsoft.Compute/GetOperationSubscriptionMaximum;14999'
+    'Strict-Transport-Security': 'REDACTED'
+    'x-ms-request-id': '935f2e07-0ccb-48fd-bdba-d3a0164070ca'
+    'x-ms-ratelimit-remaining-subscription-reads': '249'
+    'x-ms-ratelimit-remaining-subscription-global-reads': 'REDACTED'
+    'x-ms-correlation-request-id': 'REDACTED'
+    'x-ms-routing-request-id': 'REDACTED'
+    'X-Content-Type-Options': 'REDACTED'
+    'X-Cache': 'REDACTED'
+    'X-MSEdge-Ref': 'REDACTED'
+    'Date': 'Fri, 21 Jun 2024 03:07:16 GMT'
+2024-06-21 00:07:47,849 - INFO - Request URL: 'https://management.azure.com/subscriptions/c65c2f3a-5807-4010-be26-9f1bd8ae3d9f/providers/Microsoft.Compute/locations/eastus/operations/7cfe2454-76d7-4d27-a906-75c36a90b934?p=REDACTED&api-version=REDACTED&t=REDACTED&c=REDACTED&s=REDACTED&h=REDACTED'
+Request method: 'GET'
+Request headers:
+    'x-ms-client-request-id': '5d33249e-2f7b-11ef-afa7-546cebdab4c9'
+    'User-Agent': 'azsdk-python-azure-mgmt-compute/31.0.0 Python/3.12.4 (Windows-11-10.0.22631-SP0)'
+    'Authorization': 'REDACTED'
+No body was attached to the request
+2024-06-21 00:07:48,089 - INFO - Response status: 200
+Response headers:
+    'Cache-Control': 'no-cache'
+    'Pragma': 'no-cache'
+    'Content-Length': '184'
+    'Content-Type': 'application/json; charset=utf-8'
+    'Expires': '-1'
+    'x-ms-ratelimit-remaining-resource': 'Microsoft.Compute/GetOperationResource;42,Microsoft.Compute/GetOperationSubscriptionMaximum;14997'
+    'Strict-Transport-Security': 'REDACTED'
+    'x-ms-request-id': 'df6b009d-2350-45a4-907e-30341b67bdc9'
+    'x-ms-ratelimit-remaining-subscription-reads': '249'
+    'x-ms-ratelimit-remaining-subscription-global-reads': 'REDACTED'
+    'x-ms-correlation-request-id': 'REDACTED'
+    'x-ms-routing-request-id': 'REDACTED'
+    'X-Content-Type-Options': 'REDACTED'
+    'X-Cache': 'REDACTED'
+    'X-MSEdge-Ref': 'REDACTED'
+    'Date': 'Fri, 21 Jun 2024 03:07:46 GMT'
+2024-06-21 00:07:48,091 - INFO - VM pytesting-vm deleted successfully.

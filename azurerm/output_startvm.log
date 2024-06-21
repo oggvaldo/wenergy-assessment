@@ -1,0 +1,136 @@
+2024-05-31 01:28:47,249 - INFO - Authenticating with Azure...
+2024-05-31 01:28:47,249 - INFO - No environment configuration found.
+2024-05-31 01:28:47,250 - INFO - ManagedIdentityCredential will use IMDS
+2024-05-31 01:28:47,251 - INFO - Starting VM: pytesting-vm
+2024-05-31 01:28:47,252 - INFO - Request URL: 'http://169.254.169.254/metadata/identity/oauth2/token?api-version=REDACTED&resource=REDACTED'
+Request method: 'GET'
+Request headers:
+    'User-Agent': 'azsdk-python-identity/1.16.0 Python/3.11.2 (macOS-14.5-arm64-arm-64bit)'
+No body was attached to the request
+2024-05-31 01:28:48,768 - INFO - DefaultAzureCredential acquired a token from AzureCliCredential
+2024-05-31 01:28:48,768 - INFO - Request URL: 'https://management.azure.com/subscriptions/c65c2f3a-5807-4010-be26-9f1bd8ae3d9f/resourceGroups/W-Energy-Resource-Group-2-python/providers/Microsoft.Compute/virtualMachines/pytesting-vm/start?api-version=REDACTED'
+Request method: 'POST'
+Request headers:
+    'Accept': 'application/json'
+    'x-ms-client-request-id': '45c417d2-1f06-11ef-a111-e2cee30b9ab4'
+    'User-Agent': 'azsdk-python-azure-mgmt-compute/31.0.0 Python/3.12.4 (Windows-11-10.0.22631-SP0)'
+    'Authorization': 'REDACTED'
+No body was attached to the request
+2024-05-31 01:28:50,389 - INFO - Response status: 202
+Response headers:
+    'Cache-Control': 'no-cache'
+    'Pragma': 'no-cache'
+    'Expires': '-1'
+    'Location': 'REDACTED'
+    'Retry-After': '10'
+    'Azure-AsyncOperation': 'REDACTED'
+    'azure-asyncnotification': 'REDACTED'
+    'x-ms-ratelimit-remaining-resource': 'Microsoft.Compute/UpdateVMSubscriptionMaximum;1499,Microsoft.Compute/UpdateVMResource;11'
+    'Strict-Transport-Security': 'REDACTED'
+    'x-ms-request-id': '7b6a226d-c638-4c01-99c4-6fb6e17f9c87'
+    'x-ms-ratelimit-remaining-subscription-writes': '1198'
+    'x-ms-correlation-request-id': 'REDACTED'
+    'x-ms-routing-request-id': 'REDACTED'
+    'X-Content-Type-Options': 'REDACTED'
+    'X-Cache': 'REDACTED'
+    'X-MSEdge-Ref': 'REDACTED'
+    'Date': 'Fri, 31 May 2024 04:28:50 GMT'
+    'Content-Length': '0'
+2024-05-31 01:28:50,391 - INFO - Request URL: 'https://management.azure.com/subscriptions/c65c2f3a-5807-4010-be26-9f1bd8ae3d9f/providers/Microsoft.Compute/locations/eastus/operations/7b6a226d-c638-4c01-99c4-6fb6e17f9c87?p=REDACTED&api-version=REDACTED&t=REDACTED&c=REDACTED&s=REDACTED&h=REDACTED'
+Request method: 'GET'
+Request headers:
+    'x-ms-client-request-id': '45c417d2-1f06-11ef-a111-e2cee30b9ab4'
+    'User-Agent': 'azsdk-python-azure-mgmt-compute/31.0.0 Python/3.12.4 (Windows-11-10.0.22631-SP0)'
+    'Authorization': 'REDACTED'
+No body was attached to the request
+2024-05-31 01:28:51,264 - INFO - Response status: 200
+Response headers:
+    'Cache-Control': 'no-cache'
+    'Pragma': 'no-cache'
+    'Content-Length': '133'
+    'Content-Type': 'application/json; charset=utf-8'
+    'Expires': '-1'
+    'Retry-After': '10'
+    'x-ms-ratelimit-remaining-resource': 'Microsoft.Compute/GetOperationResource;44,Microsoft.Compute/GetOperationSubscriptionMaximum;14999'
+    'Strict-Transport-Security': 'REDACTED'
+    'x-ms-request-id': 'bdb97cc5-ca7b-4d98-ae72-a4f05dd586bb'
+    'x-ms-ratelimit-remaining-subscription-reads': '11999'
+    'x-ms-correlation-request-id': 'REDACTED'
+    'x-ms-routing-request-id': 'REDACTED'
+    'X-Content-Type-Options': 'REDACTED'
+    'X-Cache': 'REDACTED'
+    'X-MSEdge-Ref': 'REDACTED'
+    'Date': 'Fri, 31 May 2024 04:28:51 GMT'
+2024-05-31 01:29:01,284 - INFO - Request URL: 'https://management.azure.com/subscriptions/c65c2f3a-5807-4010-be26-9f1bd8ae3d9f/providers/Microsoft.Compute/locations/eastus/operations/7b6a226d-c638-4c01-99c4-6fb6e17f9c87?p=REDACTED&api-version=REDACTED&t=REDACTED&c=REDACTED&s=REDACTED&h=REDACTED'
+Request method: 'GET'
+Request headers:
+    'x-ms-client-request-id': '45c417d2-1f06-11ef-a111-e2cee30b9ab4'
+    'User-Agent': 'azsdk-python-azure-mgmt-compute/31.0.0 Python/3.12.4 (Windows-11-10.0.22631-SP0)'
+    'Authorization': 'REDACTED'
+No body was attached to the request
+2024-05-31 01:29:01,488 - INFO - Response status: 200
+Response headers:
+    'Cache-Control': 'no-cache'
+    'Pragma': 'no-cache'
+    'Content-Length': '133'
+    'Content-Type': 'application/json; charset=utf-8'
+    'Expires': '-1'
+    'Retry-After': '30'
+    'x-ms-ratelimit-remaining-resource': 'Microsoft.Compute/GetOperationResource;43,Microsoft.Compute/GetOperationSubscriptionMaximum;14998'
+    'Strict-Transport-Security': 'REDACTED'
+    'x-ms-request-id': '0eb38a97-9398-48a5-b5c0-e96613e7367a'
+    'x-ms-ratelimit-remaining-subscription-reads': '11995'
+    'x-ms-correlation-request-id': 'REDACTED'
+    'x-ms-routing-request-id': 'REDACTED'
+    'X-Content-Type-Options': 'REDACTED'
+    'X-Cache': 'REDACTED'
+    'X-MSEdge-Ref': 'REDACTED'
+    'Date': 'Fri, 31 May 2024 04:29:01 GMT'
+2024-05-31 01:29:31,498 - INFO - Request URL: 'https://management.azure.com/subscriptions/c65c2f3a-5807-4010-be26-9f1bd8ae3d9f/providers/Microsoft.Compute/locations/eastus/operations/7b6a226d-c638-4c01-99c4-6fb6e17f9c87?p=REDACTED&api-version=REDACTED&t=REDACTED&c=REDACTED&s=REDACTED&h=REDACTED'
+Request method: 'GET'
+Request headers:
+    'x-ms-client-request-id': '45c417d2-1f06-11ef-a111-e2cee30b9ab4'
+    'User-Agent': 'azsdk-python-azure-mgmt-compute/31.0.0 Python/3.12.4 (Windows-11-10.0.22631-SP0)'
+    'Authorization': 'REDACTED'
+No body was attached to the request
+2024-05-31 01:29:32,143 - INFO - Response status: 200
+Response headers:
+    'Cache-Control': 'no-cache'
+    'Pragma': 'no-cache'
+    'Content-Length': '183'
+    'Content-Type': 'application/json; charset=utf-8'
+    'Expires': '-1'
+    'x-ms-ratelimit-remaining-resource': 'Microsoft.Compute/GetOperationResource;41,Microsoft.Compute/GetOperationSubscriptionMaximum;14998'
+    'Strict-Transport-Security': 'REDACTED'
+    'x-ms-request-id': '8c6fa649-df84-4174-af2f-2e3245d638ba'
+    'x-ms-ratelimit-remaining-subscription-reads': '11991'
+    'x-ms-correlation-request-id': 'REDACTED'
+    'x-ms-routing-request-id': 'REDACTED'
+    'X-Content-Type-Options': 'REDACTED'
+    'X-Cache': 'REDACTED'
+    'X-MSEdge-Ref': 'REDACTED'
+    'Date': 'Fri, 31 May 2024 04:29:31 GMT'
+2024-05-31 01:29:32,144 - INFO - Request URL: 'https://management.azure.com/subscriptions/c65c2f3a-5807-4010-be26-9f1bd8ae3d9f/providers/Microsoft.Compute/locations/eastus/operations/7b6a226d-c638-4c01-99c4-6fb6e17f9c87?p=REDACTED&monitor=REDACTED&api-version=REDACTED&t=REDACTED&c=REDACTED&s=REDACTED&h=REDACTED'
+Request method: 'GET'
+Request headers:
+    'x-ms-client-request-id': '45c417d2-1f06-11ef-a111-e2cee30b9ab4'
+    'User-Agent': 'azsdk-python-azure-mgmt-compute/31.0.0 Python/3.12.4 (Windows-11-10.0.22631-SP0)'
+    'Authorization': 'REDACTED'
+No body was attached to the request
+2024-05-31 01:29:32,327 - INFO - Response status: 200
+Response headers:
+    'Cache-Control': 'no-cache'
+    'Pragma': 'no-cache'
+    'Expires': '-1'
+    'x-ms-ratelimit-remaining-resource': 'Microsoft.Compute/GetOperationResource;40,Microsoft.Compute/GetOperationSubscriptionMaximum;14997'
+    'Strict-Transport-Security': 'REDACTED'
+    'x-ms-request-id': '344f0baf-5a77-48e6-af9a-e213f29f3198'
+    'x-ms-ratelimit-remaining-subscription-reads': '11990'
+    'x-ms-correlation-request-id': 'REDACTED'
+    'x-ms-routing-request-id': 'REDACTED'
+    'X-Content-Type-Options': 'REDACTED'
+    'X-Cache': 'REDACTED'
+    'X-MSEdge-Ref': 'REDACTED'
+    'Date': 'Fri, 31 May 2024 04:29:31 GMT'
+    'Content-Length': '0'
+2024-05-31 01:29:32,328 - INFO - VM pytesting-vm started successfully.
